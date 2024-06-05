@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "appetizer",
+	"version": "${version}",
+	"name": "Appetizer",
+	"description": "Appetizer is a Minecraft Mod which tweaks Saturation Levels",
+	"authors": [
+		"bhatnag8"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/appetizer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bhatnag8.appetizer.Appetizer"
+		],
+		"client": [
+			"net.bhatnag8.appetizer.AppetizerClient"
+		],
+		"fabric-datagen": [
+			"net.bhatnag8.appetizer.AppetizerDataGenerator"
+		]
+	},
+	"mixins": [
+		"appetizer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
