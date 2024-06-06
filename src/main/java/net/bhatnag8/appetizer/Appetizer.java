@@ -1,5 +1,6 @@
 package net.bhatnag8.appetizer;
 
+import net.bhatnag8.appetizer.enchantment.ModEnchantments;
 import net.bhatnag8.appetizer.util.ModCustomTrades;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,6 +20,7 @@ public class Appetizer implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModCustomTrades.registerCustomTrades();
+		ModEnchantments.registerModEnchantments();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
